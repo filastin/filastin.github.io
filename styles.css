@@ -1,0 +1,38 @@
+html, body {
+  background: #fff;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#flag { height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 1; }
+#flag-top, #flag-bottom { height: 33.33%; left: 0; position: absolute; width: 100%; }
+#flag-top { background: #000; top: 0; }
+#flag-bottom { background: #007a3d; bottom: 0; margin-top: -33.33%; }
+#flag-arrow-top-box , #flag-arrow-bottom-box  { height: 50%; left: 0; position: absolute; width: 33.33%; }
+#flag-arrow-top-box { top: 0; }
+#flag-arrow-bottom-box { top: 50%; }
+#flag-arrow-top, #flag-arrow-bottom  { height: 100%; width: 100%; }
+#flag-arrow-top { background: linear-gradient(to right top, #ce1126 50%, transparent 50%); }
+#flag-arrow-bottom { background: linear-gradient(to right bottom, #ce1126 50%, transparent 50%); }
+
+#wrapper {
+  color: #000;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0 2%;
+  position: absolute;
+  overflow: auto;
+  top:0;
+  width: 96%;
+  z-index: 2;
+}
+
+h1, .box { background: #fff; margin: 0 0 2% 0; padding: 0.2em 0.4em; opacity: .7; }
+h1 { font-size: 1.8em; margin: 2% 0; text-align: center; }
+h2 { margin: 0; padding: 0.2em; }
+p { padding: 0.4em; text-align: justify; margin: 0;}
+ul { font-size: 0.8em; margin: 0; padding: 0.6em 0 0.4em 1.4em; }
+
+#sharing > p { text-align: left; }
