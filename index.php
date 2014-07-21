@@ -31,12 +31,12 @@ class App {
   }
   public static function signaturesNew($initials, $email) {
     return self::getDb()->insert(TBL_SIGNATURES, array(
-      'initials' => self::escape($initials), 
+      'initials' => self::escape(strtolower($initials)), 
       'email' => self::escape(strtoupper($email))
     ));
   }
   public static function signatureExists($email) {
-    return self::getDb()->has(TBL_SIGNATURES, array('email' => self::escape($email)));
+    return self::getDb()->has(TBL_SIGNATURES, array('email' => self::escape(strtolower($email))));
   }
   function get() {
     if (isset($_GET['nb'])) {

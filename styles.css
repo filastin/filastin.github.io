@@ -32,11 +32,11 @@ html, body {
 h1, .box { background: #fff; margin: 0 0 2% 0; padding: 0.2em 0.4em; opacity: .7; }
 h1 { font-size: 1.8em; margin: 2% 0; text-align: center; }
 h2 { margin: 0; padding: 0.2em; }
-p { padding: 0.4em; text-align: justify; margin: 0;}
+p { padding: 0.4em; margin: 0;}
 ul { font-size: 0.8em; margin: 0; padding: 0.6em 0 0.4em 1.4em; }
 
+#intro  > p { text-align: justify; }
+#counter > p { font-size: 1.8em; }
 #form > .error { font-size: 1em; color: red; }
 #form > .success { font-weight: bold; color: green; }
-
-#sharing > p { text-align: left; }
 #sharing { padding-bottom: 1%; }

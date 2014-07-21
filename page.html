@@ -3,10 +3,15 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
-  <title>Pour dénoncer la complicité de la France avec Israël dans l'oppression de la Palestine</title>
-  <meta name="description" content="Pétition en ligne pour dénoncer la position inacceptable du gouvernement français dans le conflit israélo-palestinien">
+  <title>Pour dénoncer la complicité de la France avec Israël dans l'oppression de la Palestine | Pétition en ligne</title>
+  <meta name="description" content="Pétition en ligne pour dénoncer la position inacceptable du gouvernement français dans le conflit israélo-palestinien.">
   <meta name="author" content="La France">
-  <link href="http://filastin.honor.es/flag.png" rel="image_src"  />
+  <link href="http://filastin.honor.es/logo.png" rel="image_src">
+  <meta property="og:title" content="Pour dénoncer la complicité de la France avec Israël dans l'oppression de la Palestine">
+  <meta property="og:image" content="http://filastin.honor.es/logo.png">
+  <meta property="og:description" content="Pétition en ligne pour dénoncer la position inacceptable du gouvernement français dans le conflit israélo-palestinien.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://filastin.honor.es/">
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="rrssb.css" />
@@ -28,12 +33,12 @@
     <div id="flag-arrow-bottom-box"> <div id="flag-arrow-bottom"></div> </div>
   </div>
   <div id="wrapper">
-    <h1><img src="logo.jpg" alt="" style="display: none">Pour dénoncer la complicité de la France avec Israël dans l'oppression de la Palestine</h1>
-    <div class="box">
+    <h1>Pour dénoncer la complicité de la France avec Israël dans l'oppression de la Palestine</h1>
+    <div class="box" id="intro">
       <p><strong>La position prise par le gouvernement français dans le conflit israélo-palestinien est une honte&nbsp;!</strong> Les médias manipulateurs n'aident pas à propager la voix du peuple. Un peuple qui se soulève contre cette hypocrisie entretenue par François Hollande et Manuel Valls.</p>
-      <p>Combien sommes-nous à rougir de honte du comportement de la France et de ses médias complices&nbsp;? Plus nous sommes nombreux, plus important est l'impact des actions menées au nom de la Palestine libre.</p>
+      <p>Combien sommes-nous à rougir du comportement de la France et de ses médias complices&nbsp;? Plus nous sommes nombreux, plus important est l'impact des actions menées au nom de la Palestine libre.</p>
     </div>
-    <div class="box">
+    <div class="box" id="counter">
       <h2>Nombre de signatures</h2>
       <p><strong id="out_signatures"><img src="counter-loader.gif" alt="..."></strong> signatures depuis le lancement de la pétition le 21 juillet 2014</p>
     </div>
@@ -45,7 +50,7 @@
           <input type="email" id="in_email" name="in_email" class="pure-input-1" placeholder="Adresse email">
         </fieldset>
         <ul class="error"></ul>
-        <input type="submit" name="submit" value="Submit form" class="pure-button pure-button-primary pure-input-1" />
+        <input type="submit" name="submit" value="Signer!" class="pure-button pure-button-primary pure-input-1" />
         <ul>
         <li>Les données collectées sont cryptées et indéchiffrables</li>
         <li>L'adresse email est nécessaire pour garantir le comptage unique des signatures</li>
@@ -84,7 +89,7 @@
         </a>
     </li>
     <li class="googleplus">
-        <a href="https://plus.google.com/share?url=P%C3%A9tition%20en%20ligne%20pour%20d%C3%A9noncer%20la%20complicit%C3%A9%20de%20la%20France%20avec%20Isra%C3%ABl%20dans%20l%27oppression%20de%20la%20Palestine%20http://filastin.honor.es" class="popup">
+        <a href="https://plus.google.com/share?url=http://filastin.honor.es" class="popup">
             <span class="icon">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                     <g>
@@ -147,13 +152,14 @@ $('#form').validate({
   errorLabelContainer: $('#form ul.error'),
   wrapper: 'li',
   rules: {
-    in_initials: { required: true, minlength: 2 },
+    in_initials: { required: true, minlength: 2, maxlength: 16 },
     in_email: { required: true, email: true }
   },
   messages: {
     in_initials: {
-      required: 'Please specify your initials',
-      minlength: 'Please enter your initials (at least 2 characters)'
+      required: 'Please specify your initials (ex: QA for Qan Anas)',
+      minlength: 'Please enter your initials at least 2 characters (ex: QA for Qan Anas)',
+	  maxlength: 'Initials cannot exceed 16 characters'
     },
     in_email: {
       required: 'We need your email address',
